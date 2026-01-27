@@ -67,6 +67,20 @@
   @apply bg-black text-white px-10 py-4 rounded-full text-base uppercase border-none;
   letter-spacing: 0.2em;
   min-width: 180px;
+
+  /* Móvil: más pequeño */
+  @apply px-6 py-3 text-sm;
+  min-width: 140px;
+  letter-spacing: 0.15em;
+
+  /* Escritorio: más grande */
+  @media (min-width: 768px) {
+  .btn-primary {
+    @apply px-10 py-4 text-base;
+    min-width: 180px;
+    letter-spacing: 0.2em;
+  }
+}
 }
 
 .btn-primary:hover {
@@ -76,7 +90,14 @@
 }
 
 .section-padding {
-  @apply py-24 px-8 md:py-32 md:px-16;
+  /* Móvil: menos padding */
+  @apply py-12 px-4;
+  
+  /* Tablet */
+  @apply md:py-20 md:px-8;
+  
+  /* Desktop */
+  @apply lg:py-32 lg:px-16;
 }
 
 .gold-section { background-color: var(--color-gold); }

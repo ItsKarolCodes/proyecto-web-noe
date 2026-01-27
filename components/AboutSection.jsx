@@ -4,12 +4,12 @@ export default function AboutSection() {
       <div className="max-w-5xl flex flex-col items-center text-center px-8">
 
         {/* Título: Recuperamos el tamaño grande y la fuente Poppins */}
-        <h2 className="text-5xl mb-8  fade-in">
+        <h2 className="text-5xl mb-8  fade-in max-md:text-4xl">
           Más de <span className="gold-text"> <span className="font-bold">25</span> años </span>
         </h2>
 
         {/* Párrafo destacado: Tamaño grande para impacto visual */}
-        <p className=" text-gray-900 mb-10 max-w-[15ch] md:max-w-[25ch] mb-[80px]">
+        <p className=" text-gray-900 mb-10 max-w-[20ch] max-md:max-w-[30ch] mb-[70px]">
           dedicada al cuidado personal, la belleza y el bienestar.
         </p>
 
@@ -20,7 +20,7 @@ export default function AboutSection() {
         </p>
 
         {/* Cuerpo de texto: Tamaño específico (14px móvil / 16px escritorio) */}
-        <p className="font-body mb-14">
+        <p className="font-body mb-14 max-md:mb-3">
           Desde hace más de 25 años, acompaño a mujeres y hombres en su proceso de verse y sentirse mejor.
           Me formo constantemente, pruebo nuevas técnicas y productos para ofrecer resultados naturales, duraderos y adaptados a cada persona.
         </p>

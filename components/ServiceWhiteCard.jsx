@@ -6,7 +6,7 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
     <section className="bg-white">
       {/* Cabecera superior dorada con título grande */}
       <div className="py-[100px] px-8 flex flex-col items-center text-center">
-        <h1 className="pt-15">
+        <h1 className="pt-15 max-md:pt-5 max-md:text-2xl">
           {title}
         </h1>
       </div>
@@ -31,10 +31,10 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
         </p>
 
         {/* Botonera centrada */}
-        <div className="flex items-center justify-center gap-12 mt-10">
+        <div className="flex items-center justify-center gap-12 max-md:gap-4 mt-10">
           <Link
             href={href}
-            className="btn-primary text-xl md:text-2xl tracking-[0.5em] py-6 px-16"
+            className="btn-primary text-2xl max-md:text-lg tracking-[0.5em] max-md:tracking-[0.2em] py-6 px-16 max-md:py-4 max-md:px-8"
           >
             SABER MÁS
           </Link>
@@ -43,7 +43,7 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
             href="https://wa.me/34646703415"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-full hover:scale-110 transition-transform duration-300 shadow-md"
+            className="p-4 rounded-full hover:scale-110 transition-transform duration-300"
             aria-label="Contactar por WhatsApp"
           >
             <img
