@@ -1,6 +1,8 @@
 
 import localFont from 'next/font/local'
 import './globals.css'
+import Navbar from '@/components/Navbar' 
+import Footer from '@/components/Footer' 
 
 // 1. Configuración de Poppins (Títulos y Menú)
 const poppins = localFont({
@@ -35,9 +37,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className="scroll-smooth">
-      {/* 3. Aplicamos ambas variables al body */}
-      <body className={`${poppins.variable} ${sfPro.variable} antialiased`}>
-        {children}
+      <body className={`${poppins.variable} ${sfPro.variable} antialiased flex flex-col min-h-screen`}>
+        <Navbar />
+        
+        {/* El contenido de cada página aparecerá aquí */}
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        <Footer />
       </body>
     </html>
   )

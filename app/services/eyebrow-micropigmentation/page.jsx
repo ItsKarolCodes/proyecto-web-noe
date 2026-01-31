@@ -14,15 +14,11 @@ export default function SeccionResultados() {
     { id: 3, antes: "/images/antes3.jpg", despues: "/images/despues3.jpg" },
     { id: 4, antes: "/images/antes4.jpg", despues: "/images/despues4.jpg" },
     { id: 5, antes: "/images/antes5.jpg", despues: "/images/despues5.jpg" },
-    { id: 6, antes: "/images/antes6.jpg", despues: "/images/despues6.jpg" },
-    { id: 7, antes: "/images/antes7.jpg", despues: "/images/despues7.jpg" },
-    { id: 8, antes: "/images/antes8.jpg", despues: "/images/despues8.jpg" },
-    { id: 9, antes: "/images/antes9.jpg", despues: "/images/despues9.jpg" },
+    { id: 6, antes: "/images/antes6.jpg", despues: "/images/despues6.jpg" }
   ];
 
   return (
     <div className="w-full bg-gold"> {/* Mantenemos el fondo dorado sólido */}
-      <Navbar />
 
       {/* HERO SECTION - Estilo Imagen 1 adaptado */}
       <section className="relative h-[100vh] flex items-center justify-center overflow-hidden">
@@ -241,12 +237,12 @@ export default function SeccionResultados() {
         </p>
 
         {/* COMPARADOR  */}
-        <section className="bg-gray-50 py-24 px-4 md:px-10">
-  <div className="max-w-[1600px] mx-auto">
+        <section className="bg-gray-50 py-24 px-4 md:px-10 rounded-4xl">
+          <div className="max-w-[1600px] mx-auto">
 
-    <h2 className="text-center font-title text-3xl md:text-5xl mb-20 uppercase tracking-[0.2em]">
-      Resultados <span className="gold-text">Reales</span>
-    </h2>
+            <h2 className="text-center font-title text-3xl md:text-5xl mb-20 uppercase tracking-[0.2em]">
+              Resultados <span className="gold-text">Reales</span>
+            </h2>
 
     {/* Volvemos a 3 columnas pero con poco espacio entre ellas para ganar tamaño */}
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
@@ -281,7 +277,6 @@ export default function SeccionResultados() {
 
       </section>
 
-      <Footer />
     </div>
   )
 }

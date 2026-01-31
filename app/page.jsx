@@ -49,8 +49,6 @@ export default function Home() {
         href="/services/manicure-pedicure"
       />
 
-      {/* FOOTER */}
-      <Footer />
     </div>
   )
 }
