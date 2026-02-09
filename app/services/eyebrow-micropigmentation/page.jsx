@@ -9,12 +9,12 @@ import Comparador from '@/components/Comparador';
 
 export default function SeccionResultados() {
   const casos = [
-    { id: 1, antes: "/images/antes1.jpg", despues: "/images/despues1.jpg" },
-    { id: 2, antes: "/images/antes2.jpg", despues: "/images/despues2.jpg" },
-    { id: 3, antes: "/images/antes3.jpg", despues: "/images/despues3.jpg" },
-    { id: 4, antes: "/images/antes4.jpg", despues: "/images/despues4.jpg" },
-    { id: 5, antes: "/images/antes5.jpg", despues: "/images/despues5.jpg" },
-    { id: 6, antes: "/images/antes6.jpg", despues: "/images/despues6.jpg" }
+    { id: 1, antes: "/images/anaA.JPEG", despues: "/images/anaB.JPEG" },
+    { id: 2, antes: "/images/asuntaA2.JPEG", despues: "/images/asuntaB2.JPEG" },
+    { id: 3, antes: "/images/cristinaA.JPEG", despues: "/images/cristinaB.JPEG" },
+    { id: 4, antes: "/images/ladiAlado.JPEG", despues: "/images/ladiBlado.JPEG" },
+    { id: 5, antes: "/images/sraAcara.JPEG", despues: "/images/sraBcara.JPEG" },
+    { id: 6, antes: "/images/patiA.JPEG", despues: "/images/patiB.JPEG" }
   ];
 
   return (

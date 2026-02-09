@@ -59,7 +59,8 @@ export default function Navbar() {
               { name: 'micropigmentación', href: '/services/eyebrow-micropigmentation' },
               { name: 'maquillaje', href: '/services/professional-makeup' },
               { name: 'terapias faciales', href: '/services/facial-therapies' },
-              { name: 'manicura y pedicura', href: '/services/manicure-pedicure' }
+              { name: 'manicura y pedicura', href: '/services/manicure-pedicure' },
+              { name: 'contacto', href: '/contact' }
             ].map((section) => (
               <Link
                 key={section.name}
