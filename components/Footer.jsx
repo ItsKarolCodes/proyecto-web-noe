@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Instagram, Music2 } from 'lucide-react';
+
 
 export default function Footer() {
   return (
-    <footer className="bg-gold py-16 md:py-24 border-t border-gray-100">
+    <footer className="bg-gold py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center">
         
         {/* 1. NOMBRE DE LA MARCA */}
@@ -36,25 +36,52 @@ export default function Footer() {
 
         {/* 3. REDES SOCIALES */}
         <div className="flex items-center gap-10 mb-12">
+          
+          {/* Instagram */}
           <a 
             href="https://www.instagram.com/noeliacamino_aquibelleza" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group transition-all duration-300 hover:scale-110"
+            aria-label="Instagram"
           >
             <div className="p-4 rounded-full border border-black group-hover:bg-black transition-colors duration-300">
-              <Instagram size={22} strokeWidth={1.2} className="text-black group-hover:text-white" />
+              <svg 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="1.2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="w-6 h-6 text-black group-hover:text-white"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
             </div>
           </a>
 
+          {/* TikTok */}
           <a 
             href="https://www.tiktok.com/@noeliacamino_aquibelleza" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group transition-all duration-300 hover:scale-110"
+            aria-label="TikTok"
           >
             <div className="p-4 rounded-full border border-black group-hover:bg-black transition-colors duration-300">
-              <Music2 size={22} strokeWidth={1.2} className="text-black group-hover:text-white" />
+              <svg 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="1.2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="w-6 h-6 text-black group-hover:text-white"
+              >
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+              </svg>
             </div>
           </a>
         </div>

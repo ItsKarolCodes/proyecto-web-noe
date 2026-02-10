@@ -35,9 +35,15 @@ export default function SeccionResultados() {
         </div>
 
         <div className="relative z-10 text-center px-6">
-          <h1 className="font-sfpro text-7xl max-md:text-2xl text-white font-bold tracking-wider uppercase">
-            Micropigmentación de cejas
+          <h1 className="font-sfpro text-7xl max-md:text-4xl text-white font-bold tracking-wider">
+            <span className="uppercase">Micropigmentación</span>{' '}
+            <span className="text-gold lowercase font-medium">de cejas</span>
           </h1>
+          
+          <p className="font-sfpro text-3xl max-md:text-xl text-gray-300 max-w-2xl mx-auto pt-8 md:pt-12 leading-relaxed tracking-wide">
+            Especialistas en técnicas de vanguardia para resaltar tu belleza natural 
+            con precisión artesanal y resultados duraderos.
+          </p>
         </div>
       </section>
 
@@ -83,7 +89,9 @@ export default function SeccionResultados() {
 
             {/* Párrafo Final */}
             <p className="font-body text-center text-2xl max-md:text-lg mb-14 max-md:mb-3 mx-auto max-w-4xl pt-15">
-              Se recomienda una revisión entre los 12 y 18 meses para mantener el color y la definición perfectos.
+              Se recomienda realizar una revisión entre los 12 y 18 meses después del procedimiento
+              para valorar el estado del pigmento y, si es necesario, realizar un refresh para mantener
+              el color y la definición perfectos.
             </p>
           </div>
         </div>
@@ -229,12 +237,11 @@ export default function SeccionResultados() {
           </h2>
 
           <p className="font-body text-black text-center text-3xl mb-14 mx-auto max-w-4xl max-md:text-xl max-md:max-w-full">
-            Cada tratamiento se realiza de forma personalizada, cuidando cada detalle para resaltar tu mirada con cejas
-            perfectas, simétricas y naturales.
+            Cada tratamiento se realiza de forma personalizada, cuidando cada detalle para resaltar tu mirada con  <span className='font-bold'>cejas perfectas, simétricas y naturales.</span>
           </p>
 
           <p className="font-body text-black text-center text-3xl mb-14 mx-auto max-w-4xl  max-md:text-xl max-md:max-w-full">
-            La combinación de técnicas y la elección adecuada según el tipo de piel garantizan un resultado duradero, seguro y totalmente adaptado a ti.
+            La combinación de técnicas y la elección adecuada según el tipo de piel garantizan un resultado <span className='font-bold'>duradero, seguro y totalmente adaptado a ti.</span>
           </p>
         </div>
         {/* SECCIÓN COMPARADOR: Ahora ocupa el ancho completo (w-full) */}

@@ -12,7 +12,7 @@ export async function POST(req) {
     // 2. Enviamos el correo usando Resend
     const data = await resend.emails.send({
       from: 'Web Noelia Camino <onboarding@resend.dev>', // Email de prueba por defecto
-      to: ['aquibellezanc@gmail.com'], // 🚩 CAMBIA ESTO por tu correo real
+      to: ['aquibellezanc@gmail.com'], 
       subject: `Nueva solicitud: ${nombre}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px; color: #333; border: 1px solid #eee; border-radius: 10px;">
