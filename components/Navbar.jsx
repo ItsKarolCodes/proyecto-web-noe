@@ -52,7 +52,7 @@ export default function Navbar() {
 
       {/* Menú Desplegable: Fondo dorado sólido y Texto negro */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#C9B400] z-40 flex items-center justify-center fade-in">
+        <div className="fixed inset-0 bg-gold z-40 flex items-center justify-center fade-in">
           <div className="text-center space-y-10">
             {[
               { name: 'inicio', href: '/' },
@@ -66,7 +66,7 @@ export default function Navbar() {
                 key={section.name}
                 href={section.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-black text-3xl md:text-5xl hover:opacity-50 font-title font-light tracking-[0.2em] capitalize transition-all duration-300"
+                className="block text-black text-xl md:text-5xl hover:opacity-50 font-title font-light tracking-[0.2em] capitalize transition-all duration-300"
               >
                 {section.name}
               </Link>

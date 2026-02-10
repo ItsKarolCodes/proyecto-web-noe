@@ -62,25 +62,20 @@
    ================================ */
 
 .btn-primary {
-  /* Usamos apply para todo para mantener consistencia */
-  @apply inline-flex items-center justify-center transition-all duration-300;
-  @apply bg-black text-white px-10 py-4 rounded-full text-base uppercase border-none;
-  letter-spacing: 0.2em;
-  min-width: 180px;
+  /* 1. Esencia y Colores */
+  @apply inline-flex items-center justify-center transition-all duration-300 rounded-full uppercase border-none bg-black text-white;
+  
+  /* 2. Tamaño Escritorio (Desktop First) */
+  @apply text-2xl py-10 px-20; 
+  letter-spacing: 0.5em; /* Tracking extra ancho para estilo editorial */
+  min-width: 300px;
 
-  /* Móvil: más pequeño */
-  @apply px-6 py-3 text-sm;
-  min-width: 140px;
-  letter-spacing: 0.15em;
-
-  /* Escritorio: más grande */
-  @media (min-width: 768px) {
-  .btn-primary {
-    @apply px-10 py-4 text-base;
-    min-width: 180px;
+  /* 3. Ajuste para Móvil (max-width) */
+  @media (max-width: 767px) {
+    @apply text-lg py-4 px-8;
     letter-spacing: 0.2em;
+    min-width: 140px;
   }
-}
 }
 
 .btn-primary:hover {

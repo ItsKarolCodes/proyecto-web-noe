@@ -1,4 +1,4 @@
-import Form from '@/components/Form'; // Asegúrate de que el archivo se llame Form.jsx o Formulario.jsx
+import Form from '@/components/Form'; 
 
 export default function Contact() {
     return (

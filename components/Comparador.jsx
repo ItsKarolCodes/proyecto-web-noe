@@ -35,7 +35,6 @@ const ComparadorHorizontal = ({ antes, despues }) => {
         className="object-cover"
         /* Aumentamos sizes para que Next.js no baje la calidad en pantallas grandes */
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-        priority
     />
 
     {/* Imagen ANTES (Cortina) */}
