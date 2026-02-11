@@ -31,7 +31,7 @@ const sfPro = localFont({
 
 export const metadata = {
   title: 'Noelia Camino - Micropigmentación de Cejas | Belleza y Bienestar',
-  description: 'Más de 25 años de experiencia en micropigmentación de cejas, maquillaje profesional, manicura y terapias faciales.',
+  description: 'Especialista en micropigmentación de cejas, maquillaje profesional y terapias faciales',
 }
 
 export default function RootLayout({ children }) {

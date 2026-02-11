@@ -63,18 +63,32 @@
 
 .btn-primary {
   /* 1. Esencia y Colores */
-  @apply inline-flex items-center justify-center transition-all duration-300 rounded-full uppercase border-none bg-black text-white;
+  /* Añadimos shadow-md para la base y transform para habilitar movimientos */
+  @apply inline-flex items-center justify-center transition-all duration-500 
+         rounded-full uppercase border-none bg-black text-white shadow-md transform;
   
-  /* 2. Tamaño Escritorio (Desktop First) */
-  @apply text-2xl py-10 px-20; 
-  letter-spacing: 0.5em; /* Tracking extra ancho para estilo editorial */
-  min-width: 300px;
+  /* 2. Tamaño Escritorio (Más equilibrado) */
+  @apply text-base py-4 px-10; /* Reducido de py-8 a py-4 */
+  letter-spacing: 0.3em;       /* Un poco más sutil que 0.5em */
+  min-width: 220px;            /* Reducido de 300px a 220px */
 
-  /* 3. Ajuste para Móvil (max-width) */
+  /* 3. Ajuste para Móvil */
   @media (max-width: 767px) {
-    @apply text-lg py-4 px-8;
-    letter-spacing: 0.2em;
-    min-width: 140px;
+    @apply text-xs py-3 px-6;
+    letter-spacing: 0.15em;
+    min-width: 120px;
+  }
+
+  /* 4. Efecto Hover "Bonito" */
+  &:hover {
+    @apply -translate-y-1 shadow-xl bg-gray-900; 
+    /* El -translate-y-1 lo desplaza hacia arriba 4px */
+    /* shadow-xl da la sensación de que se aleja del fondo */
+  }
+
+  /* Efecto Active (cuando haces clic) */
+  &:active {
+    @apply translate-y-0 shadow-inner;
   }
 }
 

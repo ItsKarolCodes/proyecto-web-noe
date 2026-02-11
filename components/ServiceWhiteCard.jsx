@@ -6,7 +6,7 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
     <section className="bg-white">
       {/* Cabecera blanca */}
       <div className="py-[100px] max-md:py-14 px-8 flex flex-col items-center text-center">
-        <h2 className="text-5xl max-md:text-xl font-title uppercase tracking-widest leading-tight">
+        <h2 className="text-3xl max-md:text-xl font-title uppercase tracking-widest leading-tight">
           {title}
         </h2>
       </div>
@@ -18,7 +18,7 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
 
       {/* Bloque inferior blanco */}
       <div className="py-[100px] max-md:py-14 px-6 flex flex-col items-center text-center">
-        <p className="font-body text-center text-3xl max-md:text-base max-w-[60ch] max-md:max-w-[90%] mx-auto mb-16 max-md:mb-8 tracking-wide leading-relaxed">
+        <p className="font-body text-center text-xl max-md:text-base max-w-[60ch] max-md:max-w-[90%] mx-auto mb-16 max-md:mb-8 tracking-wide leading-relaxed">
           {description}
         </p>
 
@@ -30,13 +30,16 @@ export default function ServiceWhiteCard({ title, description, imageSrc, imageAl
             href="https://wa.me/34646703415"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:scale-110 transition-transform duration-300"
+            className="inline-flex items-center justify-center hover:scale-110 hover:drop-shadow-lg transition-all duration-300"
             aria-label="Contactar por WhatsApp"
           >
             <img
               src="/icons/whatsapp.png"
               alt="WhatsApp"
-              className="w-[80px] h-[80px] max-md:w-[45px] max-md:h-[45px]"
+              /* Escritorio: w-[56px] (aprox. la altura del botón .btn-primary)
+                 Móvil: w-[40px] (más equilibrado con el botón pequeño)
+              */
+              className="w-[56px] h-[56px] max-md:w-[40px] max-md:h-[40px] object-contain"
             />
           </a>
         </div>

@@ -14,7 +14,8 @@ export default function Hero() {
           fill
           className="object-cover object-center max-md:object-[30%_center] opacity-90"
           priority
-          quality={100}
+          quality={75}
+          sizes="100vw"
         />
         
         {/* Overlay optimizado: Desktop First */}

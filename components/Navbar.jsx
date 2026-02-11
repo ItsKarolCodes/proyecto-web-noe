@@ -19,11 +19,15 @@ export default function Navbar() {
           >
             {/* Si el menú está abierto, aplicamos un filtro para que el logo blanco se vea negro */}
             <Image
-              src="/icons/LOGO_BLANCO.png"
+              // 1. Cambiamos el src dinámicamente según el estado del menú
+              src={isMenuOpen ? "/icons/LOGO_NEGRO.png" : "/icons/TXT_AMARILLO.png"}
               alt="Noelia Camino Logo"
               fill
-              className={`object-contain transition-all duration-300 ${isMenuOpen ? 'brightness-0' : ''}`}
+              // 2. Quitamos el filtro 'brightness' y dejamos una transición limpia
+              className="object-contain transition-opacity duration-300"
               priority
+              // 3. La key ayuda a React a resetear el componente y aplicar la transición
+              key={isMenuOpen ? "negro" : "blanco"}
             />
           </Link>
 
@@ -66,7 +70,7 @@ export default function Navbar() {
                 key={section.name}
                 href={section.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-black text-xl md:text-5xl hover:opacity-50 font-title font-light tracking-[0.2em] capitalize transition-all duration-300"
+                className="block text-black text-xl md:text-3xl hover:opacity-50 font-title font-light tracking-[0.2em] capitalize transition-all duration-300"
               >
                 {section.name}
               </Link>
